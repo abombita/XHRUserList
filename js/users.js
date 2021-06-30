@@ -41,7 +41,7 @@
                 userView = JSON.parse(secondXhr.responseText);
                 console.log(userView)
     
-                let populate = `<p>${userView}</p>`
+                let populate = `<p>${userView.name}<br>${userView.username}<br>${userView.website}</p>`;
     
                 document.getElementById('userView').innerHTML += populate;
             };
